@@ -1,18 +1,9 @@
 <nav>
-  <mat-toolbar>
-    <div class="container-list">
-      <ul>
-        <li *ngFor="let item of navItems">
-          <a [href]="item.path">{{ item.label }}</a>
-        </li>
-      </ul>
-    </div>
-    <button
-      matIconButton
-      class="example-icon"
-      aria-label="Example icon-button with menu icon"
-    >
-      <mat-icon>menu</mat-icon>
-    </button>
-  </mat-toolbar>
+  <div class="container-list">
+    <ul>
+      <li *ngFor="let item of navItems">
+        <a [href]="item.path">{{ item.label }}</a>
+      </li>
+    </ul>
+  </div>
 </nav>
